@@ -1,0 +1,27 @@
+{
+  "name": "book-search-engine",
+  "version": "1.0.0",
+  "description": "Refactoring a RESTful API using GraphQL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will-Neal/book-search-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Will-Neal/book-search-engine/issues"
+  },
+  "homepage": "https://github.com/Will-Neal/book-search-engine#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
